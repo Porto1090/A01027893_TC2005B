@@ -1,3 +1,5 @@
+//Escribe una función que implemente el algoritmo 'bubble-sort' para ordenar una lista de números.
+
 function BubbleSort(array){
 	for(let i=0; i<array.length; i++){
 	for(let j=0; j<(array.length-i-1); j++){

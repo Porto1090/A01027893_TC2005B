@@ -1,3 +1,5 @@
+//Escribe una función que reciba una cadena de texto y regrese una nueva con la primer letra de cada palabra en mayúscula.
+
 function capitalizarPrimerasLetras(cadena) {
     let palabras = cadena.split(" ");
 
@@ -14,5 +16,4 @@ function capitalizarPrimerasLetras(cadena) {
 
 let cadenaOriginal = "hola mundo";
 let cadenaCapitalizada = capitalizarPrimerasLetras(cadenaOriginal);
-console.log(cadenaCapitalizada);
-
+console.log(`Cadena capitalizada: ${cadenaCapitalizada}`);
