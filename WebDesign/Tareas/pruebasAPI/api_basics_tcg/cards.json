@@ -1,0 +1,44 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "nombre": "Fireball",
+      "costo_mana": 7,
+      "tipo": "daño",
+      "cantidad": 7
+    },
+    {
+      "id": 2,
+      "nombre": "Lightning Bolt",
+      "costo_mana": 1,
+      "tipo": "daño",
+      "cantidad": 3
+    },
+    {
+      "id": 3,
+      "nombre": "Healing Touch",
+      "costo_mana": 3,
+      "tipo": "curación",
+      "cantidad": 8
+    },
+    {
+      "id": 4,
+      "nombre": "Summon Goblin",
+      "costo_mana": 4,
+      "tipo": "invocación",
+      "cantidad": 1
+    }
+  ]
+}
+
+{
+  "cards": [
+    {
+      "id": 5,
+      "nombre": "Hiper Explosion",
+      "costo_mana": 10,
+      "tipo": "destrucción",
+      "cantidad": 1
+    }
+  ]
+}

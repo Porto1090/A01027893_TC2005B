@@ -20,7 +20,7 @@ app.get("/hello/:name", (req, res)=>{
         const salute=  `Hello ${req.params.name}!!`;
         res.status(200).send(salute);
     }
-    );
+);
     
     app.post("/cards",  (req, res)=>{
         console.log(req.body);
