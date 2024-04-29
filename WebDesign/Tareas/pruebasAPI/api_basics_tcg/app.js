@@ -87,9 +87,6 @@ app.put("/cards/:id", (req, res) => {
     }
 });
 
-
-
-
 // Debe escuchar el servidor
 app.listen(PORT, () => {
     console.log(`Running on port ${PORT}`);
