@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 9ba5cd8f0f7bc45c5acab6403a86b3ce
+  - enabled: 1
+    path: Assets/Scenes/PongGame.unity
+    guid: 986c144a43585418ba7569ab9f4f23e0
+  - enabled: 1
+    path: Assets/Scenes/SimonGame.unity
+    guid: 129aa9f788f714ce6ae7519404e742bf
+  - enabled: 1
+    path: Assets/Scenes/CreditsScene.unity
+    guid: 3e52b3cc7b1fc4f37a90d6df7f7a5cf6
+  m_configObjects: {}
