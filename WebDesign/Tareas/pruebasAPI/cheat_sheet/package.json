@@ -1,18 +1,15 @@
 {
-  "name": "db_connection",
+  "name": "cheat_sheet",
   "version": "1.0.0",
-  "description": "",
+  "description": "Actividad: HTML Cheat Sheet",
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Porto1090",
   "license": "ISC",
   "dependencies": {
-    "access": "^1.0.2",
-    "express": "^4.19.2",
-    "mysql2": "^3.9.7"
+    "express": "^4.19.2"
   }
 }
