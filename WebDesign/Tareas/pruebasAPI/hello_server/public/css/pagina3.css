@@ -1,0 +1,49 @@
+* {
+    font-family: Arial, sans-serif;
+    border: 2px solid black;
+}
+
+html {
+    background-color: blueviolet;
+}
+
+body {
+    background-color: darkgrey;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: green;
+    font-size: 50px;
+    background-color: yellow;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+a {
+    margin: 15px;
+    padding: 10px;
+}
+
+.div_style {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+#css_cheat_sheet {
+    background-color: orangered;
+    color: white;
+}
+
+#button_style {
+    background-color: brown;
+}
+
+#button_style button{
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
