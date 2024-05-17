@@ -42,8 +42,14 @@ a {
     background-color: brown;
 }
 
-#button_style button{
+#button_style button {
     font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
     background-color: black;
     color: white;
+}
+
+deepl-input-controller {
+    display: none;
 }
