@@ -3,26 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CheatSheet</title>
+    <title>HTMLCheatSheet</title>
+    <style>
+        .title { color: red; }
+    </style>
 </head>
-<body>
-    <h1>
-        <font color="red">HTML Cheat Sheet</font>
-    </h1>
-    <p>
-        HTML is the standard markup language for creating Web pages.
-    </p>
+<body> 
+    <h1 class="title">HTML Cheat Sheet</h1>
+    <p>HTML (HyperText Markup Language) es el lenguaje estándar utilizado para crear y diseñar páginas web.</p>
+    <p>Es un lenguaje de marcado que permite estructurar el contenido en la web mediante el uso de etiquetas. <br>
+    Cada etiqueta tiene una función específica y define diferentes tipos de contenido y su presentación en una página web.</p>
     <h2>
-        a - Hyperlinks
+        a - hipervínculos
     </h2>
     <p>
         Sirven para hacer un link de una página a otro recurso en la web, sea otro archivo en el servidor web, u otra página web.
     </p>
     <p>
-        Por ejemplo: <a href="https://www.youtube.com/watch?v=KNaHZwf1o6Q&ab_channel=TheGrefg">El siguiente link muestra un hyperlinks al himno de SAIYANS!</a>
+        Por ejemplo: <a href="https://youtu.be/U-n4hWNewiE?si=qpznVxgpjRxCw6zK" target="_blank">El siguiente link muestra un hyperlinks a Porta - Dragon Ball Rap!</a>
     </p>
     <h2>
-        p - Paragraphs
+        p - párrafos
     </h2>
     <p>
         Sirven para crear párrafos en una página web.
@@ -99,19 +100,15 @@
     <p>
         Por ejemplo: <b>Este texto está en negritas</b>
     </p>
-
-
-
-
-
     <h2>
-        strike - etiqueta de hipertexto (tachado)
+        del - etiqueta de hipertexto (tachado)
     </h2>
     <p>
+        El tag "strike" se volvió obsoleto y se debe usar "del".
         Sirve para tachar el texto y hacer énfasis en las partes más importantes de un texto.
     </p>
     <p>
-        Por ejemplo: <strike>Este texto está tachado</strike>
+        Por ejemplo: <del>Este texto está tachado</del>
     </p>
     <h2>
         small - etiqueta de hipertexto (pequeño)
@@ -138,7 +135,7 @@
         Sirve para definir un encabezado para un documento o una sección. Aporta semántica y SEO a la página web.
     </p>
     <p>
-        Por ejemplo: <header><h3>Este es un encabezado con H1</h3></header>
+        Por ejemplo: <header><h3>Este es un encabezado con H3</h3></header>
     </p>
     <h2>
         section - sección particular
@@ -186,7 +183,7 @@
         Por ejemplo:
         <nav>
             <ul>
-              <li><a href="#">HTML Cheat Sheet</a></li>
+                <li><a href="/">HTML Cheat Sheet</a></li>
             </ul>
         </nav>
     </p>
@@ -305,6 +302,5 @@
             <li>Elemento 3</li>
         </ol>
     </p>
-    
 </body>
 </html>
