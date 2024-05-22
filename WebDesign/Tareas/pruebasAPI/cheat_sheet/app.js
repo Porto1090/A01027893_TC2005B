@@ -9,13 +9,18 @@ let cards= [];
 app.use(express.json());
 app.use(express.static("public"));
 
-app.get("/",  (req, res)=>{
-        const file= fs.readFileSync("public/html/hmtl_cheat_sheet.html", "utf8");
-        res.status(200).send(file);
-    }
-);
+app.get("/", (req, res) => {
+    res.redirect("/html_cheat_sheet");
+});
 
-app.listen(port, ()=>{
+app.get("/html_cheat_sheet", (req, res) => {
+    res.sendFile("html_cheat_sheet.html", { root: "public/html" });
+});
+
+app.get("/css_cheat_sheet", (req, res) => {
+    res.sendFile("css_cheat_sheet.html", { root: "public/html" });
+});
+
+app.listen(port, () => {
     console.log(`Running on port ${port}`);
-}
-);
+});
