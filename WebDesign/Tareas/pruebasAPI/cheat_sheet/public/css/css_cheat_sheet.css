@@ -147,15 +147,55 @@ body {
     border: 1px solid #000;
 }
 
-.overflow {
+.overflow-auto {
     overflow: auto;
+    padding: 10px;
     width: 200px;
     height: 50px;
     border: 1px solid #000;
 }
 
-.display {
+.overflow-visible {
+    overflow: visible;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #000;
+}
+
+.overflow-visible {
+    overflow: visible;
+    padding-bottom: 100px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #000;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #000;
+}
+
+.display-flex {
     display: flex;
+    border: 1px solid #000;
+}
+
+.display-block {
+    display: flex;
+    border: 1px solid #000;
+}
+
+.display-inline {
+    display: inline-block;
+    border: 1px solid #000;
+}
+
+.display-grid {
+    display: grid;
     border: 1px solid #000;
 }
 
