@@ -13,13 +13,11 @@ h1 {
 }
 
 h2 {
-    font-size: 18px;
-    margin-right: 300px;
+    font-size: 15px;
     font-weight: bold;
 }
 
 h3 {
-    margin-right: 70px;
     color:white;
 }
 
@@ -31,12 +29,15 @@ a {
 }
 
 nav {
+    display: flex;
+    align-items: center;
     color: white;
     padding: 10px;
 }
 
 p {
     padding: 20px;
+    margin-bottom: 0;
 }
 
 button {
@@ -55,51 +56,66 @@ button {
     color: white;
     align-items: center;
     justify-content: space-around;
+    padding: 10px 0px;
 }
 
 #development {
     background-color:darkgoldenrod;
-    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color:white;
+    padding: 35px 150px;
 }
 
 #subscribe {
     background-color: darkslategray;
-    height: 80px;
     display: flex;
-    font-weight: bold;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#subscribe form {
+    display: flex;
+    align-items: center;
+    padding-inline: 30px;
+}
+
+#subscribe input {
+    padding: 5px;
+    margin-right: 10px;
 }
 
 #iconos {
     background-color: white;
-    height: 325px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.icon {
     text-align: center;
+    margin: 10px;
+    display: inline-block;
+    width: 30%;
 }
 
 #copyright {
     background-color: darkslategray;
-    color:white;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 56px;
 }
 
 #dev_text {
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-bottom: 55px;
+    margin: 20px;
 }
 
 #copy_text {
     font-size: small;
+    margin: 0;
 }
