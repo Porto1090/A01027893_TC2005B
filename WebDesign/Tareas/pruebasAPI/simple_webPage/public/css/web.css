@@ -1,0 +1,121 @@
+* {
+    font-family: "Verdana", 'Times New Roman', Times, serif;
+}
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+h3 {
+    color:white;
+}
+
+a {
+    font-size: 12px;
+    margin-left: 15px;
+    color:white;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+
+p {
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+button {
+    background-color: darkgoldenrod;
+    color:white;
+    margin-left: 5px;
+    height: 25px;
+    font-size: small;
+    font-weight: bold;
+    padding-inline: 10px;
+}
+
+#title {
+    background-color: darkslategray;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+
+#development {
+    background-color:darkgoldenrod;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    padding: 35px 150px;
+}
+
+#subscribe {
+    background-color: darkslategray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#subscribe form {
+    display: flex;
+    align-items: center;
+    padding-inline: 30px;
+}
+
+#subscribe input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#iconos {
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.icon {
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+    width: 30%;
+}
+
+#copyright {
+    background-color: darkslategray;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dev_text {
+    margin: 20px;
+}
+
+#copy_text {
+    font-size: small;
+    margin: 0;
+}

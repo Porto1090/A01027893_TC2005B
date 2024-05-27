@@ -1,0 +1,37 @@
+* {
+    font-family: "FiraCode", 'Times New Roman', Times, serif;
+}
+
+div, header, nav {
+    border: solid 2px black;
+    padding: 10px;
+    margin: 10px;
+}
+
+#flex-cont-row {
+    display: flex;
+    flex-direction: row;
+}
+
+#flex-cont-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    padding: 5px;
+    color: blue;
+    background-color: yellow;
+}
