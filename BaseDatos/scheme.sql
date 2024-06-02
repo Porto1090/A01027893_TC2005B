@@ -1,0 +1,85 @@
+CREATE DATABASE IF NOT EXISTS db_pokemonTCG;
+-- Path: scheme.sql
+USE db_pokemonTCG;
+
+CREATE TABLE IF NOT EXISTS player (
+    playerID INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    firstName VARCHAR(50) NOT NULL,
+    lastName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    score TINYINT UNSIGNED NOT NULL,
+    PRIMARY KEY (playerID),
+    FOREIGN KEY (deckID) REFERENCES deck(deckID)
+) ENGINE=InnoDB, CHARSET=ascii;
+
+CREATE TABLE IF NOT EXISTS deck (
+    deckID INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    deckName VARCHAR(50) NOT NULL,
+    playerID INT UNSIGNED NOT NULL,
+    creationDate DATE NOT NULL,
+    PRIMARY KEY (deckID)
+    FOREIGN KEY (playerID) REFERENCES player(playerID)
+) ENGINE=InnoDB, CHARSET=ascii;
+
+CREATE TABLE IF NOT EXISTS card (
+    cardID INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    cardName VARCHAR(50) NOT NULL,
+    cardType ENUM('Pokemon', 'Energy', 'Trainer') NOT NULL,
+    rarity ENUM('Common', 'Uncommon', 'Rare') NOT NULL,
+    cardHealth TINYINT UNSIGNED NOT NULL,
+    cardAttack TINYINT UNSIGNED NOT NULL,
+    cardCost TINYINT UNSIGNED NOT NULL,
+    PRIMARY KEY (cardID)
+) ENGINE=InnoDB, CHARSET=ascii;
+
+CREATE TABLE IF NOT EXISTS deckCard (
+    deckCardID INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    deckID INT UNSIGNED NOT NULL,
+    cardID TINYINT UNSIGNED NOT NULL,
+    PRIMARY KEY (deckCardID),
+    FOREIGN KEY (deckID) REFERENCES deck(deckID),
+    FOREIGN KEY (cardID) REFERENCES card(cardID)
+) ENGINE=InnoDB, CHARSET=ascii;
+
+CREATE TABLE IF NOT EXISTS collection (
+    collectionID INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    playerID INT UNSIGNED NOT NULL,
+    deckID INT UNSIGNED NOT NULL,
+    cardID INT UNSIGNED NOT NULL,
+    PRIMARY KEY (collectionID),
+    FOREIGN KEY (playerID) REFERENCES player(playerID),
+    FOREIGN KEY (deckID) REFERENCES deck(deckID),
+    FOREIGN KEY (cardID) REFERENCES card(cardID)
+) ENGINE=InnoDB, CHARSET=ascii;
+
+CREATE TABLE IF NOT EXISTS game (
+    gameID INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    player1 INT UNSIGNED NOT NULL,
+    player2 INT UNSIGNED NOT NULL,
+    collectionID INT UNSIGNED NOT NULL,
+    winner ENUM('Player1', 'Player2') NOT NULL,
+    gameDate DATE NOT NULL,
+    duration TIME NOT NULL,
+    type ENUM('Single', 'Double') NOT NULL,
+    PRIMARY KEY (gameID),
+    FOREIGN KEY (player1) REFERENCES player(playerID),
+    FOREIGN KEY (player2) REFERENCES player(playerID),
+    FOREIGN KEY (collectionID) REFERENCES collection(collectionID)
+) ENGINE=InnoDB, CHARSET=ascii;
+
+CREATE TABLE IF NOT EXISTS evolutions (
+    evolutionID INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    cardID INT UNSIGNED NOT NULL,
+    evolutionName VARCHAR(50) NOT NULL,
+    PRIMARY KEY (evolutionID),
+    FOREIGN KEY (cardID) REFERENCES card(cardID)
+) ENGINE=InnoDB, CHARSET=ascii;
+
+CREATE TABLE IF NOT EXISTS abilities (
+    abilityID INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    cardID INT UNSIGNED NOT NULL,
+    abilityDescription VARCHAR(255) NOT NULL,
+    PRIMARY KEY (abilityID),
+    FOREIGN KEY (cardID) REFERENCES card(cardID)
+) ENGINE=InnoDB, CHARSET=ascii;
